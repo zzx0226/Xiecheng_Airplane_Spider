@@ -83,10 +83,9 @@ for yd_date in range(len(ap_date)):
         try:
             plane_lp_int=int(plane_lp)
         except ValueError:
-            pass 
-        limit_dt=int(plane_dt[0])*10+int(plane_dt[1])
+            pass
         airline_al=plane_al[0:4]
-        if plane_lp_int<expect_price and limit_dt<=18 and limit_dt>10 and airline_al!='春秋航空':
+        if plane_lp_int<expect_price:
             airplane_table.add_row([plane_al,plane_dpbn,plane_apbn,plane_dt,plane_at,plane_lp])
         print(plane_data)
     time.sleep(10)#此处不建议注释 以防被封
