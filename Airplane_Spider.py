@@ -64,7 +64,6 @@ def send_mail(data_html):
 browser=webdriver.Chrome()
 
 airplane_table = PrettyTable(["航空公司", "出发地", "到达地", "出发时间", "到达时间", "价格"])
-bad_al='春秋航空'
 for yd_date in range(len(ap_date)):
     print(ap_date[yd_date])
     airplane_table.add_row(['----------------','--------------',ap_date[yd_date],'-----------','-----------','-----------'])
